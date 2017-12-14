@@ -22,7 +22,7 @@
                     <ul>
                         <li><a href="#">nav ul li a</a></li>
                         <li><a href="#">nav ul li a</a></li>
-                        <li><a href="#">nav ul li a</a></li>
+                        {% if user.is_authenticated %}<li><a href="{% url 'post_new' %}">Post</a></li>{% endif %}
                     </ul>
                 </nav>
             </header>
