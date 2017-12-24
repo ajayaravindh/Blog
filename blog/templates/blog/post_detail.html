@@ -5,7 +5,7 @@
 {% block content %}
 	<h2 style = "color: #e44d26;">{{post.title}}</h2>
 	{% if post.published_date %}
-		<p>Published on: {{post.published_date}} by {{post.author}}</p>
+		<p><b>Published on</b>: {{post.published_date}} <b>by</b> {{post.author}}</p>
 	{% else %}
 		<p><b>Published on</b>: {{post.created_date}} <b>by</b> {{post.author}}</p>
 	{% endif %}
