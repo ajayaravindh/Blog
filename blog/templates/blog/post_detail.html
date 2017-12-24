@@ -7,7 +7,7 @@
 	{% if post.published_date %}
 		<p>Published on: {{post.published_date}} by {{post.author}}</p>
 	{% else %}
-		<p>Published on: {{post.created_date}} by {{post.author}}</p>
+		<p><b>Published on</b>: {{post.created_date}} <b>by</b> {{post.author}}</p>
 	{% endif %}
 	<br>
 	<p>
