@@ -4,7 +4,7 @@
 
 {% block content %}
 	{% for post in posts %}
-		<h2><a href = "{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+		<h2 style = "color: #e44d26"><a href = "{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
 		<p><b>Published on</b>: {{ post.published_date }} <b>by</b> {{ post.author }}</p><br>
 		<p>
 			{{ post.text|safe|linebreaksbr|truncatewords:25 }}
